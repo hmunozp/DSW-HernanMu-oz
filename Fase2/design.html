@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+</head>
+<body>
+    <header>
+        <h1> Hojas de Estilo en Cascada CSS, Frameworks CSS</h1>
+    </header>
+    <hr>
+<nav>
+    <ul>
+     <li>Inicio</li>
+     <li>Temas
+         <ul>
+             <li>Hojas de Estilo en Cascada CSS</li>
+             <li>Frameworks CSS</li>
+         </ul>
+     </li>
+     <li>Recursos
+         <ul>
+             <li>Recurso 1</li>
+             <li>Recurso 2</li>
+         </ul>
+     </li>
+     <li>Aprendizaje
+         <ul>
+             <li>Actividad 1</li>
+             <li>Actividad 2</li>
+         </ul>
+     </li>
+     <li>Acerca de
+         <ul>
+             <li>Autor</li>
+         </ul>
+     </li>
+    </ul>
+</nav>
+<hr>
+<!-- Contenido Principal de la Pagina -->
+<main>
+   <section>
+       <h2>Proposito del Sitio</h2>
+       <p>
+           Enseñar el funcionamiento de las hojas en estilo en Cascada CSS, 
+           su jerarquia a la hora de aplicar estilos y su debido comportamiento.
+       </p>
+<hr>
+       <article>
+           <h3>Hojas de Estilo en Cascada CSS</h3>
+           <img src="images/Hojas de Estilo en Cascada CSS.jpg" alt="Hoja de Estilo en Cascada">
+           <p>
+            El objetivo de este artículo es desarrollar la comprensión de algunos de los conceptos 
+            fundamentales de CSS (cascada, especificidad y herencia) que controlan cómo se aplica el 
+            CSS al HTML y cómo se resuelven los conflictos.
+           </p>
+           <h4>Reglas conflictivas</h4>
+            <p>
+                Por lo general, un problema suele ser que se haya creado dos normas que 
+                podrían aplicarse al mismo elemento. La cascada, y el concepto estrechamente, la 
+                pregunta seria, cual de los 2 usar?; pero la regla que se usará, lo más posible 
+                es que no sea la deseada; por lo mismo, es necesario comprender el funcionamiento de 
+                estos mecanismos.
+
+                También es significativo el concepto de herencia, que significa que algunas 
+                propiedades CSS heredan por defecto  de los valores establecidos en el elemento 
+                padre, pero otras no. 
+            </p>
+            <h4>Cascada</h4>
+           <p>
+            Las Hojas de Estilo en cascada nos indica, de manera sencilla y facil
+            de entender, que los estilos aplicados para las diferentes encabezados,
+            es tomado en el ultimo lugar en el CSS.
+
+           </p>
+           <h4>Especificidad</h4>
+           <p>
+            La especifidad es la jerarquia que tienen los navegadores a la hora de 
+            aplicar los estilos, y se basa en los siguientes elementos:
+            <ol>
+                <li>Un selector de elemento es menos específico (selecciona todos 
+                    los elementos de aquel tipo que aparecen en la página) por lo que 
+                    presenta una puntuación más baja en especificidad.</li>
+                <li>Un selector de clase es más específico (selecciona solo los
+                     elementos de una página que tienen un valor de atributo class dado),
+                      y por tanto recibe una puntuación mayor.</li>
+            </ol>
+        </p>
+
+        <h4>Herencia</h4>
+        <p>
+            La herencia debe entenderse como lo siguiente: algunos valores de las 
+            propiedades CSS que se han establecido para los elementos padre los heredan 
+            los elementos hijo, pero otros no.
+        </p>
+        <p>
+            <h6>Contribution, M. (29 de 09 de 2021). MDNWebDocs. 
+                Obtenido de https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance#especificidad</h6>
+        </p>
+       </article>
+
+       <hr>
+
+       <article>
+           <h3>Frameworks CSS</h3>
+           <img src="images/Frameworks CSS.png" alt="5 mejores Fameworks CSS">
+           <p>
+            Un framework de CSS es una biblioteca de estilos genéricos que puede ser usada para
+            implementar diseños web. Aportan una serie de utilidades que pueden ser aprovechadas
+            frecuentemente en los distintos diseños web.
+            Por lo mismo se presentan los 5 mejores Frameworks CSS, que son:
+           </p>
+            <h4>Tailwind CSS</h4>
+            <p>
+                Este Framework es muy personalizable, te permite crear una interfaz de usuario única,
+                 te permite jugar con los colores, tamaños de borde, tamaño de la fuente, paddings, 
+                 margenes, sombras y otros elementos y propiedades.
+
+                Tailwind CSS se centra en los nombre de clases, se le hará difícil dominarla si no 
+                tiene nociones de CSS y de la herramienta Atomic CSS.
+            <h4>Bootstrap</h4>
+            <p>
+                Este Framework es uno de los más populares en la actualidad, hasta la fecha de este Post
+                se encuentra en su versión 4.4.1, cuenta con características muy importantes como esquemas 
+                de color, modificadores, clases útiles para usar formularios, cards, listas, tablas, videos, 
+                carrusel, ventanas modales, tooltips, etc.
+
+                Esta construida sobre SASS y es compatible con LESS y obviamente con SASS.
+            </p>
+           <h4>Foundation</h4>
+           <p>
+            Este Framework junto con Bootstrap son uno de los más utilizados en la actualidad, Foundation 
+            es más sofisticado, asimismo es muy flexible y fácil de personalizar. Este Framework CSS te permite 
+            crear aplicaciones y páginas web adaptables a los dispositivos, empresas como Mozilla, HP, Cisco, eBay, 
+            Facebook, Adobe, Disney, entre otras, usan Foundation.
+           </p>
+           <h4>Pure CSS</h4>
+           <p>
+            Este Framework es adaptable a los dispositivos y fue creado por la empresa Yahoo por el año 2014, 
+            fue construido sobre la herramienta Normalize CSS. A diferencia de Bootstrap, no permite crear diseños 
+            fijos y es muy ligero, pesa alrededor de 3.5 Kb solamente cuando se comprime y se minimiza. Este Framework 
+            cuenta con menús verticales, horizontales y desplegables, asimismo con formularios, botones, tablas, etc.
+           </p>
+           <h4>Bulma</h4>
+           <p>
+            Este Framework CSS es open source y esta creado para trabajar con el diseño de cajas flexibles o Flexbox. 
+            Bulma es muy ligero, liviano y con soporte para móviles. Cuenta con mas de 200 mil usuarios hasta la actualidad
+             y se encuentra entre los Frameworks más populares del área, junto con Bootstrap y Foundation,
+           </p>
+           <p>
+            <h6>Wikipedia. (16 de 08 de 2021). Wikipedia.org. 
+                Obtenido de https://es.wikipedia.org/wiki/Hoja_de_estilos_en_cascada
+                <br>
+                Colectora, N. (28 de 01 de 2020). nubecolectora. 
+                    Obtenido de https://blog.nubecolectiva.com/los-5-mejores-frameworks-css-para-desarrolladores-en-2020/</h6>
+        </p>
+          <hr>
+       </article>
+   </section>
+</main>
+
+<footer>
+    <p>
+        <h5>Correo:  hmunozp@unadvirtual.edu.co <br>
+        Skype: live: hernan_02_12 <br>
+        Fecha de actualización: 30/09/2021 </h5>
+    </p>
+</footer>
+
+</body>
+</html>
