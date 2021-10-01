@@ -52,53 +52,51 @@
        <article>
            <h3>Hojas de Estilo en Cascada CSS</h3>
            <img src="images/Hojas de Estilo en Cascada CSS.jpg" alt="Hoja de Estilo en Cascada">
-           <p>
-            El objetivo de este artículo es desarrollar la comprensión de algunos de los conceptos 
-            fundamentales de CSS (cascada, especificidad y herencia) que controlan cómo se aplica el 
-            CSS al HTML y cómo se resuelven los conflictos.
-           </p>
-           <h4>Reglas conflictivas</h4>
+    
             <p>
-                Por lo general, un problema suele ser que se haya creado dos normas que 
-                podrían aplicarse al mismo elemento. La cascada, y el concepto estrechamente, la 
-                pregunta seria, cual de los 2 usar?; pero la regla que se usará, lo más posible 
-                es que no sea la deseada; por lo mismo, es necesario comprender el funcionamiento de 
-                estos mecanismos.
-
-                También es significativo el concepto de herencia, que significa que algunas 
-                propiedades CSS heredan por defecto  de los valores establecidos en el elemento 
-                padre, pero otras no. 
+                El modo de funcionamiento de las CSS consiste en definir, mediante una sintaxis
+especial, la forma de presentación que se aplica a:
+Un web entero, de modo que se puede definir la forma de todo el web de una sola
+vez.
+Un documento HTML o página, se puede definir la forma, en un pequeño trozo de
+código en la cabecera, a toda la página.
+Una porción del documento, aplicando estilos visibles en un trozo de la página.
+Una etiqueta en concreto, llegando incluso a poder definir varios estilos diferentes
+para una sola etiqueta. Esto es muy importante ya que ofrece potencia en la
+programación. Se puede definir, por ejemplo, varios tipos de párrafos: en rojo, en
+azul, con márgenes, sin ellos, etc.
+La potencia de la tecnología salta a la vista. Pero no solo se queda aquí, ya que
+además esta sintaxis CSS permite aplicar al documento formato de modo mucho
+más exacto. Si antes el HTML se quedaba corto para maquetar las páginas y se
+tenía que utilizar trucos para conseguir efectos, ahora existen muchas más
+herramientas que nos permiten definir esta forma:
+9 definir la distancia entre líneas del documento.
+9 colocar elementos en la página con mayor precisión, y sin lugar a errores.
+9 Y mucho más, como definir la visibilidad de los elementos, margines,
+subrayados, tachados.
+El HTML tan sólo podía definir atributos en las páginas con pixeles y porcentajes,
+ahora se puede definir utilizando muchas más unidades como:
+9 Pixeles (px) y porcentaje (%), como antes.
+9 Pulgadas (in) 
+65
+9 Puntos (pt)
+9 Centímetros (cm)
+Los exploradores modernos son capaces de presentar las Normas Web mucho
+mejor, y ya no se necesita usar estos métodos arcaicos.
+En lugar de anidar tablas dentro de tablas y de llenar celdas vacías con
+espaciadores GIF, podemos utilizar un marcado mucho más simple y CSS para
+diseñar espectaculares sitios que serán más rápidos para cargar, más fáciles de
+rediseñar y más accesibles para todos.
+Si se diseñan las páginas utilizando un marcado estructural en los documentos
+HTML y hojas de estilo en cascada (Cascading Style Sheets), se puede mantener
+el contenido de las páginas separado de la manera en que se presentan. Las CSS
+facilitan la accesibilidad y la correcta visualización de las páginas en los
+navegadores que respeten dichos estándares
             </p>
-            <h4>Cascada</h4>
-           <p>
-            Las Hojas de Estilo en cascada nos indica, de manera sencilla y facil
-            de entender, que los estilos aplicados para las diferentes encabezados,
-            es tomado en el ultimo lugar en el CSS.
-
-           </p>
-           <h4>Especificidad</h4>
-           <p>
-            La especifidad es la jerarquia que tienen los navegadores a la hora de 
-            aplicar los estilos, y se basa en los siguientes elementos:
-            <ol>
-                <li>Un selector de elemento es menos específico (selecciona todos 
-                    los elementos de aquel tipo que aparecen en la página) por lo que 
-                    presenta una puntuación más baja en especificidad.</li>
-                <li>Un selector de clase es más específico (selecciona solo los
-                     elementos de una página que tienen un valor de atributo class dado),
-                      y por tanto recibe una puntuación mayor.</li>
-            </ol>
-        </p>
-
-        <h4>Herencia</h4>
         <p>
-            La herencia debe entenderse como lo siguiente: algunos valores de las 
-            propiedades CSS que se han establecido para los elementos padre los heredan 
-            los elementos hijo, pero otros no.
-        </p>
-        <p>
-            <h6>Contribution, M. (29 de 09 de 2021). MDNWebDocs. 
-                Obtenido de https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance#especificidad</h6>
+            <h6>Pilamunga Poveda, E. M., & DT-López Sevilla, G. M. (2012). El maquetado a base de scripts
+                 y hojas de estilo en cascada (CSS) y su incidencia en la optimización de un sitio web.
+                Tomado de: http://repositorio.uta.edu.ec/bitstream/123456789/7146/1/Esp.DAW.1636.pdf</h6>
         </p>
        </article>
 
@@ -108,58 +106,147 @@
            <h3>Frameworks CSS</h3>
            <img src="images/Frameworks CSS.png" alt="5 mejores Fameworks CSS">
            <p>
-            Un framework de CSS es una biblioteca de estilos genéricos que puede ser usada para
-            implementar diseños web. Aportan una serie de utilidades que pueden ser aprovechadas
-            frecuentemente en los distintos diseños web.
-            Por lo mismo se presentan los 5 mejores Frameworks CSS, que son:
+            Debido a que las estructuras CSS son complicadas surgen los frameworks que
+            ayudan a facilitar el desarrollo de las aplicaciones.
+            En la actualidad existen gran variedad de frameworks de CSS. Se seleccionaron
+            los frameworks más utilizados con el fin de evaluar las características, ventajas,
+            desventajas, alcances y limitaciones.
+            La lista siguiente corresponde a los frameworks seleccionados para este estudio
+            teniendo en cuenta los artículos encontrados:
            </p>
-            <h4>Tailwind CSS</h4>
-            <p>
-                Este Framework es muy personalizable, te permite crear una interfaz de usuario única,
-                 te permite jugar con los colores, tamaños de borde, tamaño de la fuente, paddings, 
-                 margenes, sombras y otros elementos y propiedades.
-
-                Tailwind CSS se centra en los nombre de clases, se le hará difícil dominarla si no 
-                tiene nociones de CSS y de la herramienta Atomic CSS.
-            <h4>Bootstrap</h4>
-            <p>
-                Este Framework es uno de los más populares en la actualidad, hasta la fecha de este Post
-                se encuentra en su versión 4.4.1, cuenta con características muy importantes como esquemas 
-                de color, modificadores, clases útiles para usar formularios, cards, listas, tablas, videos, 
-                carrusel, ventanas modales, tooltips, etc.
-
-                Esta construida sobre SASS y es compatible con LESS y obviamente con SASS.
-            </p>
-           <h4>Foundation</h4>
-           <p>
-            Este Framework junto con Bootstrap son uno de los más utilizados en la actualidad, Foundation 
-            es más sofisticado, asimismo es muy flexible y fácil de personalizar. Este Framework CSS te permite 
-            crear aplicaciones y páginas web adaptables a los dispositivos, empresas como Mozilla, HP, Cisco, eBay, 
-            Facebook, Adobe, Disney, entre otras, usan Foundation.
-           </p>
-           <h4>Pure CSS</h4>
-           <p>
-            Este Framework es adaptable a los dispositivos y fue creado por la empresa Yahoo por el año 2014, 
-            fue construido sobre la herramienta Normalize CSS. A diferencia de Bootstrap, no permite crear diseños 
-            fijos y es muy ligero, pesa alrededor de 3.5 Kb solamente cuando se comprime y se minimiza. Este Framework 
-            cuenta con menús verticales, horizontales y desplegables, asimismo con formularios, botones, tablas, etc.
-           </p>
-           <h4>Bulma</h4>
-           <p>
-            Este Framework CSS es open source y esta creado para trabajar con el diseño de cajas flexibles o Flexbox. 
-            Bulma es muy ligero, liviano y con soporte para móviles. Cuenta con mas de 200 mil usuarios hasta la actualidad
-             y se encuentra entre los Frameworks más populares del área, junto con Bootstrap y Foundation,
-           </p>
-           <p>
-            <h6>Wikipedia. (16 de 08 de 2021). Wikipedia.org. 
-                Obtenido de https://es.wikipedia.org/wiki/Hoja_de_estilos_en_cascada
-                <br>
-                Colectora, N. (28 de 01 de 2020). nubecolectora. 
-                    Obtenido de https://blog.nubecolectiva.com/los-5-mejores-frameworks-css-para-desarrolladores-en-2020/</h6>
+           <ul>
+               <li>960 Grid System
+                <p>Es un framework de CSS que se creó por la necesidad de tener un
+                “estándar” en el ancho de los sitios web, el cual facilita la maquetación a un
+                estándar de 960px de ancho, tiene configuraciones de 12 y 16 columnas para
+                poder combinar entre sí y así crear layout de una forma simple y rápida.</p>
+            <ol>
+                <li>Caracteristicas
+                    <ul>
+                        <li>Diseño basado en retícula, utiliza columnas de tamaño fijo para establecer
+                            una retícula que sirva de base en la creación de los sitios web. Puede ser
+                            una combinación de 12 o 16 columnas. </li>
+                        <li>Compatibilidad, se creó contemplando desde el inicio la compatibilidad con
+                            los diferentes navegadores de Internet, utiliza etiquetas estándar de HTML
+                            y CSS.</li>
+                        <li>Administración independiente de las tipografías, mediante un archivo
+                            externo llamado text.css</li>
+                        <li>Tipografía definida en pixeles, facilita el diseño ya que se pueden manejar
+                            tamaños absolutos en el diseño.</li>
+                        <li>Estructura básica sin diseño</li>
+                        <li>Alcance de 960 Grid System</li>
+                        <li>Aplicaciones web de estructura orientada a columnas</li>
+                    </ul>
+                </li>
+                
+               <li>Ventajas de 960 Grid System
+                   <ul>
+                       <li>Estructura previa, el sistema ofrece una estructura para la diagramación de
+                        los sitios web.</li>
+                       <li>Experiencia visual, ofrece una retícula que mejora el balance, la alineación
+                        y el espacio para lograr una mejor experiencia visual.</li>
+                       <li>Reemplaza el uso de tablas.</li>
+                       <li>Compatibilidad. El 960 Grid System es compatible con la mayoría de los
+                        navegadores más utilizados como el Mozilla Firefox, Google Chrome,
+                        Safari, Internet Explorer y Opera.</li>
+                       <li>Mayor velocidad de desarrollo. El uso de un sistema como el 960 Grid
+                        System agiliza el proceso de creación de sitios web.</li>
+                   </ul>
+               </li>
+               <li>Desventajas de 960 Grid System
+                   <ul>
+                       <li>Es una estructura rígida, el sistema ofrece una retícula rígida para la
+                        diagramación de los sitios web que no permite variantes para lograr otras
+                        formas de mostrar el contenido.</li>
+                       <li>Limita la creatividad, el uso continuo de una retícula, limita la creatividad en
+                        el diseño y la diagramación de sitios web.
+                        </li>
+                       <li>Nuevas dimensiones de pantalla, funciona muy bien con resoluciones de
+                        hasta 1024 pixeles; sin embargo, cada vez las pantallas permiten mayores
+                        resoluciones y el sistema no se adapta satisfactoriamente a resoluciones
+                        superiores.
+                        </li>
+                       <li>Difícil implementación. </li>
+                   </ul>
+               </li>
+               <li>) Limitaciones de 960 Grid System
+                   <ul>
+                       <li>No es fácil de implementar por cualquier diseñador web, se deben tener
+                        conocimientos de HTML y CSS.</li>
+                   </ul>
+                   <br>
+               </li>
+               
+           </ol>
+           <li>Blueprint CSS
+               <p>
+                Blueprint es un marco CSS que sirve de apoyo en el diseño y maquetación de
+                webs 2.0, que apunta a reducir tiempo de desarrollo ofreciendo una base sólida
+                para construcción de un proyecto, con una tabla fácil de usar, tipografía sensible,
+                plugins útiles y una hoja de estilo para la impresión.
+               </p>
+               <ol>
+                   <li> Características de Blueprint CSS
+                       <ul>
+                           <li>Una rejilla que permite crear cualquier estructura de página web, se trata de
+                            un conjunto de clases CSS para posicionar cualquier elemento en un
+                            espacio de 950 píxeles de anchura, dividido en 24 columnas.
+                            </li>
+                           <li> Una definición de tipografía predeterminada, de manera precisa para todos
+                            los elementos de la página que pueden tener texto.</li>
+                           <li>Estilos para formularios, con los que mejorar las interfaces de usuario. </li>
+                           <li>Estilos para impresión, con las definiciones CSS más útiles para que las
+                            páginas se lean bien cuando se imprimen en papel.</li>
+                           <li>Estilos específicos para IE, con los que resolver algunos de los problemas
+                            más comunes de Internet Explorer.</li>
+                       </ul>
+                   </li>
+                   <li>Alcance de Blueprint CSS
+                       <ul>
+                           <li>Cualquier aplicación se puede desarrollar utilizando el framework.</li>
+                       </ul>
+                   </li>
+                   <li>Ventajas de Blueprint CSS
+                       <ul>
+                           <li>La curva de aprendizaje es corta.</li>
+                           <li>Muy robusto.</li>
+                           <li>Se integra bien con otros frameworks.</li>
+                           <li>Su nivel de Cross-browser es del 99%.</li>
+                           <li>No es restrictivo.</li>
+                           <li>Hoja de estilos para impresión.</li>
+                           <li>Clases fáciles de recordar.</li>
+                           <li>Te puedes crear tu propia rejilla.</li>
+                           <li>Gran comunidad.</li>
+                       </ul>
+                   </li>
+                   <li>Desventajas de Blueprint CSS
+                       <ul>
+                           <li>En un principio se puede percibir como un sistema rígido</li>
+                           <li>Énfasis en la estructura por encima del contenido de los objetos.</li>
+                       </ul>
+                   </li>
+                   <li>Limitaciones de Blueprint CSS
+                       <ul>
+                        <li>Conocimientos previos en CSS </li>
+                       </ul>
+                   </li>
+               </ol>
+        </li>
+        <p>
+            <h6>Aponte, Á. M. V. (2014). Guía comparativa de Frameworks para los lenguajes HTML 5, CSS 
+                y JavaScript para el desarrollo de aplicaciones Web (Doctoral dissertation, Universidad 
+                Tecnológica de Pereira. Facultad de Ingenierías Eléctrica, Electrónica, Física y Ciencias 
+                de la Computación. Ingeniería de Sistemas y Computación).
+                Tomado de:https://core.ac.uk/download/pdf/71397979.pdf</h6>
         </p>
           <hr>
        </article>
    </section>
+   <section>
+       <h3>Mockup</h3>
+       <img src="images/Mockup.PNG" alt="Mockup">
+   </section>
+   <hr>
 </main>
 
 <footer>
