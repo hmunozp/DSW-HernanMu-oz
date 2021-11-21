@@ -21,6 +21,7 @@ grid-column: 4/5;
 }
 
 footer{
+    background-color: #0F044C;
 color:white;
 }
 
@@ -28,8 +29,3 @@ main{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-
-
-
-
-
